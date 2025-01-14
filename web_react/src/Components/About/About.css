@@ -1,0 +1,35 @@
+.about{
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    position: relative;
+    margin-top: 100PX;
+}
+
+.about_left{
+    flex-basis: 40%;
+    position: relative;
+}
+
+.about-right{
+    flex-basis: 56%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.about-img{
+    width: 700px;
+    border-radius: 10px;
+    height: auto;
+    display: block;
+}
+
+.about-right h3,
+.about-right h2,
+.about-right p {
+    margin: 0 0 0 25px;
+    line-height: 1.5;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}

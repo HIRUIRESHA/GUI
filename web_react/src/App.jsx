@@ -1,34 +1,36 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from 'react'
+import Navbar from './Components/Navbar/Navbar'
+import Hero from './Components/Hero/Hero'
+import Movies from './Components/Movies/Movies'
+import Title from './Components/Title/Title'
+import Tv from './Components/Tv/Tv'
+import Titletv from './Components/Titletv/Titletv'
+import About from './Components/About/About'
+import Contact from './Components/Contact/Contact'
+import Footer from './Components/Footer/Footer'
 
-function App() {
-  const [count, setCount] = useState(0)
 
-  return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+const App = () => {
+
+
+  return(
+    <div className = 'container'>
+      <Navbar/>
+      <Hero/>
+      <div className = "container">
+      <Title/><Movies/>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+      <div className = "container">
+        <Titletv subTitle = 'TV Series Categories to Suit Every Taste' title = 'Explore TV Series'/>
+        <Tv/><About/>
+        <Titletv subTitle = 'Contact Us' title = 'Getting Touch with Us'/>
+        <Contact/><Footer/>
+
+        
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+
+      
+    </div>
   )
 }
 
