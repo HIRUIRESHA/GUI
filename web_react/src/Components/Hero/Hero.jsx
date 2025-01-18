@@ -13,10 +13,10 @@ const Hero = () =>
                       share your thoughts, explore genuine reviews, and rate your favorite movies.
                        Discover hidden gems, track trending films, and connect with a community of like-minded movie lovers.
                         From blockbusters to indie flicks, let your voice shape the world of entertainment!</p>
-                        <button className = 'btn'>Explore more<img src = {right_arrow_icon} alt = "" /></button>
+                        <button className = 'btn'>Explore more<img src = {right_arrow_icon} alt = "" /></button>        
             </div>
         </div>
     )
 }
 
-export default Hero
+export default Hero 

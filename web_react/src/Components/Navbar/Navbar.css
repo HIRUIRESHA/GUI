@@ -100,6 +100,10 @@ ul li{
     display: none;
 }
 
+.nav-sign-link{
+    color: rgb(246, 221, 253);
+}
+
 /*...........media query...........*/
 @media (max-width: 1000px){
     .logo{
