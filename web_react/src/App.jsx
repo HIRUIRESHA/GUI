@@ -10,30 +10,49 @@ import About from './Components/About/About'
 import Contact from './Components/Contact/Contact'
 import Footer from './Components/Footer/Footer'
 import Sign from './pages/Sign'
+import Movie from './pages/Movie/Movie'
+import Tvpage from './pages/Tvpage/Tvpage'
+
+
 
 const App = () => {
   return(
+    <div className='largecontainer'>
+      
+
     <Router>
+    <Navbar/>
       <Routes>
         <Route path="/sign" element={<Sign/>} />
+        <Route path="/hero" element={<Hero />} />
+        
         <Route path="/" element={
           <div className="container">
-            <Navbar/>
+            
             <Hero/>
             <div className="container">
-              <Title/><Movies/>
+              <Title/>
+        <Movies />
             </div>
             <div className="container">
               <Titletv subTitle='TV Series Categories to Suit Every Taste' title='Explore TV Series'/>
               <Tv/><About/>
               <Titletv subTitle='Contact Us' title='Getting Touch with Us'/>
-              <Contact/><Footer/>
+              <Contact/>
             </div>
           </div>
         } />
+      
+      
+      <Route path="/Movie/Movie" element={<Movie/>} />
+      <Route path="/Tvpage/Tvpage" element={<Tvpage/>} />
+ 
       </Routes>
+      <Footer/>
     </Router>
+   
+    </div>
   )
 }
 
-export default App
+export default App  

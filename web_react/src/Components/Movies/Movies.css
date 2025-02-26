@@ -7,6 +7,10 @@
     position: relative;
   }
   
+  .movie-link{
+    color: rgb(37, 7, 37);
+  }
+
   .row {
     display: flex;
     justify-content: center; 

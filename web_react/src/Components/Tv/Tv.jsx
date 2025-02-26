@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './Tv.css'
+import { Link } from 'react-router-dom'
+
 import trending from '../../assets/trending.png'
 import rated from '../../assets/rated.png'
 import upcoming from '../../assets/upcoming.png'
@@ -66,23 +68,29 @@ const Tv = () => {
           <ul>
             <li>
               <img src={trending} alt="Trending" />
-              <span>Trending Series</span>
+
+              <Link to="/Tvpage/Tvpage" className='tv-link'>
+              <span>Trending Series</span></Link>
             </li>
             <li>
               <img src={rated} alt="Top Rated" />
-              <span>Top-Rated Series</span>
+              <Link to="/Tvpage/Tvpage" className='tv-link'>
+              <span>Top-Rated Series</span></Link>
             </li>
             <li>
               <img src={upcoming} alt="Upcoming" />
-              <span>New & Upcoming Series</span>
+              <Link to="/Tvpage/Tvpage" className='tv-link'>
+              <span>New & Upcoming Series</span></Link>
             </li>
             <li>
               <img src={bringe} alt="Bringe Worthy" />
-              <span>Bringe-Worthy Series</span>
+              <Link to="/Tvpage/Tvpage" className='tv-link'>
+              <span>Bringe-Worthy Series</span></Link>
             </li>
             <li>
               <img src={favorite} alt="Fan Favorite" />
-              <span>Fan Favorite Series</span>
+              <Link to="/Tvpage/Tvpage" className='tv-link'>
+              <span>Fan Favorite Series</span></Link>
             </li>
           </ul>
         </div>
@@ -103,4 +111,4 @@ const Tv = () => {
     );
   };
   
-  export default Tv;
+  export default Tv
