@@ -1,0 +1,186 @@
+/* General Container */
+.user-home-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.home-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+/* Error Message */
+.error-message {
+  text-align: center;
+  color: red;
+}
+
+/* Image Slider */
+.image-slider {
+  margin-bottom: 40px;
+}
+
+.slider-container {
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.slider-item {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  margin-right: 10px;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.slider-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.slider-item:hover .slider-image {
+  transform: scale(1.1);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s ease;
+}
+
+.slider-item:hover .overlay {
+  opacity: 1;
+}
+
+.overlay-text {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.watch-now-btn {
+  padding: 10px 20px;
+  background-color: #ff6347;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.watch-now-btn:hover {
+  background-color: #e53e3e;
+}
+
+/* Genre Section */
+.genre-section {
+  margin-bottom: 40px;
+}
+
+.section-title {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.genres-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.genre-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9f9f9;
+  padding: 15px 20px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.genre-item:hover {
+  background-color: #f0f0f0;
+  transform: translateX(5px);
+}
+
+.genre-item h3 {
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+.more-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.more-btn:hover {
+  background-color: #0056b3;
+}
+
+/* TV Series Section */
+.tv-series-section {
+  margin-bottom: 40px;
+}
+
+.tv-series-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tv-series-item {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  margin-right: 10px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.tv-series-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.tv-series-item:hover .tv-series-image {
+  transform: scale(1.1);
+}
+
+.tv-series-item:hover .overlay {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .slider-container,
+  .tv-series-list {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .slider-item,
+  .tv-series-item {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
