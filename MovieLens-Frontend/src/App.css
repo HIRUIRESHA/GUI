@@ -99,15 +99,18 @@
   margin: 50px auto;
   padding: 20px;
   border: 1px solid #e2e2e2;
+  box-shadow: 20px black;
   border-radius: 8px;
   background-color: #f9f9f9;
   font-family: 'Roboto', sans-serif; /* Updated font family */
+  
 }
 
 .login-tabs {
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
+ 
 }
 
 .login-tabs button {
@@ -129,6 +132,7 @@
 
 .form-group {
   margin-bottom: 20px;
+  margin-right: 20px;
 }
 
 .form-group label {

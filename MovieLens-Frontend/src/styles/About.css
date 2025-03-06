@@ -2,6 +2,10 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
+  box-shadow:black;
+  border: black;
+  border-width: 100px;
+
 }
 
 .page-title {
@@ -12,10 +16,10 @@
 }
 
 .about-content {
-  background-color: #fff;
+  background-color: #ffffffc1;
   border-radius: 8px;
   padding: 30px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
 }
 
 .about-section {
@@ -76,7 +80,7 @@
 .team-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 30px;
+  gap: 40px;
   margin-top: 20px;
 }
 
@@ -85,8 +89,8 @@
 }
 
 .member-photo {
-  width: 150px;
-  height: 150px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
   margin: 0 auto 15px;
   overflow: hidden;

@@ -63,25 +63,25 @@ const About = () => {
           <h2>Meet The Team</h2>
           <div className="team-grid">
             <div className="team-member">
-              <div className="member-photo placeholder"></div>
+              <div className="member-photo placeholder"><img src="https://t3.ftcdn.net/jpg/08/20/75/34/360_F_820753420_Nqjb8USaj0J7K82Uo6yZLhCv4roZFBj7.jpg" alt="" className="member-photo" /></div>
               <h3>Jane Doe</h3>
               <p>Founder & CEO</p>
             </div>
             
             <div className="team-member">
-              <div className="member-photo placeholder"></div>
-              <h3>John Smith</h3>
+              <div className="member-photo placeholder"><img src="https://ysm-res.cloudinary.com/image/upload/c_crop,x_112,y_0,w_2777,h_2777/c_fill,f_auto,q_auto:eco,dpr_3,w_650/v1/yms/prod/4424ae8b-4f64-4333-b410-77287d0b4530" alt="" className="member-photo" /></div>
+              <h3>Sarah Johson</h3>
               <p>Head of Content</p>
             </div>
             
             <div className="team-member">
-              <div className="member-photo placeholder"></div>
+              <div className="member-photo placeholder"><img src="https://imgcdn.stablediffusionweb.com/2024/5/25/4ff995af-d1b3-4975-b89f-405c6944150a.jpg" alt="" className="member-photo" /></div>
               <h3>Emily Johnson</h3>
               <p>Lead Developer</p>
             </div>
             
             <div className="team-member">
-              <div className="member-photo placeholder"></div>
+              <div className="member-photo placeholder"><img src="https://cdn.shopify.com/s/files/1/0279/6375/2523/files/PhotoRoom_20221228_144238_480x480.png?v=1673982757" alt="" className="member-photo" /></div>
               <h3>Michael Brown</h3>
               <p>UX Designer</p>
             </div>

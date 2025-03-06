@@ -32,9 +32,10 @@ const Header = () => {
   return (
     <nav className="navbar">
       <div className="navbar-logo" style={{ display: 'flex', alignItems: 'center' }}>
-        <i className="fa fa-film logo-icon" style={{ fontSize: '30px', marginRight: '10px' }} >
+        <i className="" style={{ fontSize: '30px', marginRight: '10px' }} >
         </i> {/* Replace with a relevant icon */}
-          <img src="/path-to-your-image/logo.png" alt="MovieLens" style={{ height: '40px' }} />
+        <img src="/movie_icon_dark.png" alt="MovieLens Logo" style={{ height: '60px' }} />
+        <img src="/word_icon.png" alt="MovieLens Logo" style={{ height: '80px' }} />
 
       </div>
 

@@ -35,8 +35,8 @@ function Home() {
 
   return (
     <div className="home-container">
-      <h2 className="home-title">Welcome to MovieLens Web Application</h2>
-
+      <h2 className="home-title">FIND YOUR PERFECT WATCH</h2>
+  
       <section className="image-slider">
         <div className="slider-container">
           {movies.length > 0 &&

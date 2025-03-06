@@ -136,7 +136,7 @@ const Contact = () => {
                 className={errors.name ? 'error' : ''}
               />
               {errors.name && <span className="error-message">{errors.name}</span>}
-              }
+              
             </div>
             
             <div className="form-group">
@@ -150,7 +150,7 @@ const Contact = () => {
                 className={errors.email ? 'error' : ''}
               />
               {errors.email && <span className="error-message">{errors.email}</span>}
-              }
+              
             </div>
             
             <div className="form-group">
@@ -164,7 +164,7 @@ const Contact = () => {
                 className={errors.subject ? 'error' : ''}
               />
               {errors.subject && <span className="error-message">{errors.subject}</span>}
-              }
+              
             </div>
             
             <div className="form-group">
@@ -178,7 +178,7 @@ const Contact = () => {
                 className={errors.message ? 'error' : ''}
               ></textarea>
               {errors.message && <span className="error-message">{errors.message}</span>}
-              }
+              
             </div>
             
             <button 
